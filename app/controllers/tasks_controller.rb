@@ -2,8 +2,13 @@ class TasksController < ApplicationController
   def index
     @tasks = Task.all
   end
+  
+  def showmethetasks
+    redirect_to '/tasks'
+  end
 
   def new
+    
   end
 
   def create
